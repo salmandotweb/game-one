@@ -50,10 +50,7 @@
 .header__content > h1 {
   font-weight: 700;
   text-transform: uppercase;
-<<<<<<< HEAD
   font-size: 2.1rem;
-=======
->>>>>>> e5e804e3db75cc6112ce83cb988d893bb9127e48
 }
 .header__content .h1-red {
   color: #ff0268;

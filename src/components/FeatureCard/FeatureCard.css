@@ -13,7 +13,6 @@
   max-width: 25%;
   border: none;
   margin: 0rem 1rem;
-<<<<<<< HEAD
   transition: 0.3s all;
 }
 .feature-card:hover {
@@ -22,8 +21,6 @@
 }
 .feature-card:hover h5 {
   color: var(--white);
-=======
->>>>>>> e5e804e3db75cc6112ce83cb988d893bb9127e48
 }
 .feature-card h5 {
   margin-top: 0.4rem;
@@ -34,7 +31,6 @@
 .feature-card {
   font-size: 0.9rem;
 }
-<<<<<<< HEAD
 @media screen and (max-width: 1320px) {
   .feature-card {
     max-width: 30%;
@@ -73,16 +69,4 @@
   .feature-card p {
     max-width: 100%;
   }
-=======
-@media screen and (max-width:1320px) {
-    .feature-card{
-        max-width: 30%;
-    }
-}
-@media screen and (max-width:676px) {
-    .feature-card{
-        max-width: 80%;
-        margin: 1rem 0;
-    }
->>>>>>> e5e804e3db75cc6112ce83cb988d893bb9127e48
 }

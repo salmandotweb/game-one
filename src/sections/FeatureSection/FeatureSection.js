@@ -32,17 +32,17 @@ export default function FeatureSection() {
         </div>
         <div className="feature-cards card-group">
           <FeatureCard
-            img="images/feature-icon-4.png"
+            img="images/boxing.png"
             title="Boxing"
             subtitle="Write the bet number of the team you wish to bet."
           />
           <FeatureCard
-            img="images/feature-icon-5.png"
+            img="images/golf.png"
             title="Golf"
             subtitle="Write the bet number of the team you wish to bet."
           />
           <FeatureCard
-            img="images/feature-icon-6.png"
+            img="images/racing.png"
             title="Horse Racing"
             subtitle="Write the bet number of the team you wish to bet."
           />

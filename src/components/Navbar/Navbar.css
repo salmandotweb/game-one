@@ -3,10 +3,13 @@
   --white: #fff;
   --black: #000;
 }
-.navbar{
-  transition: .3s all;
+.navbar {
+  transition: 0.3s all;
 }
-.navbar__active{
+.navbar-brand img {
+  max-width: 6rem;
+}
+.navbar__active {
   background-color: hsla(259, 53%, 23%);
 }
 .nav-item:not(:last-child) {
@@ -27,10 +30,10 @@
   border-radius: 5rem;
   font-weight: 600;
   text-transform: uppercase;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
-.btn i{
-  margin-left: .2rem;
+.btn i {
+  margin-left: 0.2rem;
 }
 .btn:hover {
   background: transparent;
@@ -61,10 +64,10 @@
   .nav-item:not(:last-child) {
     margin-right: 0;
   }
-  .navbar{
+  .navbar {
     background: rgb(94, 53, 177);
   }
-  .navbar-collapse{
+  .navbar-collapse {
     padding: 2rem 0;
   }
 }
