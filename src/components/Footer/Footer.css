@@ -1,0 +1,66 @@
+:root {
+  --primary-pink: #ff3573;
+  --dark-purple: #5e35b1;
+  --white: #fff;
+  --black: #000;
+}
+.footer {
+  min-height: 70vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+.copyright {
+  background: var(--black);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+}
+.copyright p {
+  margin: 0;
+}
+.links a {
+  color: var(--primary-pink);
+  margin: 0 0.5rem;
+}
+.links a i {
+  font-size: 1.3rem;
+}
+@media screen and (max-width: 900px) {
+  .copyright p {
+    font-size: .8rem;
+  }
+}
+@media screen and (max-width: 554px) {
+  .copyright p {
+    font-size: .7rem;
+  }
+  .links a i{
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 426px) {
+  .copyright p {
+    font-size: .6rem;
+  }
+  .links a i{
+    font-size: .8rem;
+  }
+  .copyright{
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 359px) {
+  .copyright p {
+    font-size: .5rem;
+  }
+}

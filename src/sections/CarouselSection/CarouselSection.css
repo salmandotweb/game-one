@@ -1,0 +1,76 @@
+:root {
+  --primary-pink: #ff3573;
+  --dark-purple: #5e35b1;
+  --white: #fff;
+  --black: #000;
+}
+.carousel-section-content {
+  min-width: 100%;
+  text-align: center;
+  padding: 4rem 0 1rem 0;
+}
+.carousel-section-content h5 {
+  font-size: 1.3rem;
+}
+.carousel-section-content h1 {
+  color: var(--black);
+  text-transform: capitalize;
+}
+.carousel-indicators [data-bs-target] {
+  background-color: var(--black) !important;
+}
+.carousel-indicators .active {
+  opacity: 1;
+}
+.carousel-control-next-icon i,
+.carousel-control-prev-icon i {
+  color: var(--black);
+  font-size: 3rem;
+  font-weight: 500;
+}
+.w-100 {
+  width: 80% !important;
+  margin: auto;
+}
+@media screen and (max-width: 740px) {
+  .carousel-control-next-icon i,
+  .carousel-control-prev-icon i {
+    color: var(--black);
+    font-size: 2rem;
+    font-weight: 500;
+  }
+}
+@media screen and (max-width: 510px) {
+  .carousel-control-next-icon i,
+  .carousel-control-prev-icon i {
+    color: var(--black);
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  .carousel-section-content h1 {
+    font-size: 1.5rem;
+  }
+  .carousel-section-content h5 {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .carousel-control-next-icon i,
+  .carousel-control-prev-icon i {
+    color: var(--black);
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  .carousel-section-content h1 {
+    font-size: 1.3rem;
+  }
+  .carousel-section-content {
+    padding: 2rem 0 1rem 0;
+  }
+}
+@media screen and (max-width: 345px) {
+  .carousel-control-next-icon i,
+  .carousel-control-prev-icon i {
+    display: none;
+  }
+}
