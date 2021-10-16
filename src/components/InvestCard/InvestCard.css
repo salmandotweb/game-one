@@ -1,0 +1,105 @@
+:root {
+  --primary-pink: #ff3573;
+  --dark-purple: rgb(94, 53, 177);
+  --white: #fff;
+  --black: #000;
+}
+.invest-card {
+  align-items: center;
+  max-width: 22%;
+  margin: 1rem;
+  border-radius: 0 !important;
+  color: var(--white);
+  padding: 2rem 1rem;
+  transition: 0.2s all;
+  background: none;
+  background-image: linear-gradient(to bottom, rgb(33, 0, 99), rgb(2, 0, 31));
+  backdrop-filter: blur(10px);
+  border: none;
+  box-shadow: 0 0.5rem 0.8rem rgb(94, 53, 177, 0.2);
+}
+.invest-card:hover {
+  background-image: linear-gradient(to bottom, rgb(44, 0, 133), rgb(0, 13, 65));
+  transform: scale(1.1);
+}
+.seeAll-btn {
+  border: none;
+  color: var(--white);
+  background: none;
+}
+.seeAll-btn:hover {
+  border: none;
+  color: var(--primary-pink);
+  background: none;
+}
+.card-body .profit {
+  color: var(--primary-pink);
+  font-weight: 700;
+  font-size: 2rem;
+}
+.card-body .title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  text-transform: uppercase;
+}
+.card-body .subtitle {
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width:1285px) {
+    .invest-card{
+        max-width: 24%;
+    }
+}
+@media screen and (max-width:1175px) {
+    .invest-card{
+        max-width: 26%;
+    }
+}
+@media screen and (max-width:950px) {
+    .invest-card{
+        max-width: 28%;
+    }
+}
+@media screen and (max-width:890px) {
+    .invest-card{
+        max-width: 30%;
+    }
+}
+@media screen and (max-width:780px) {
+    .invest-card{
+        max-width:35%;
+    }
+}
+@media screen and (max-width:680px) {
+    .invest-card{
+        max-width:40%;
+    }
+    .card-body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .card-body .subtitle{
+        max-width: 95%;
+        font-size: .7rem !important;
+    }
+}
+@media screen and (max-width:585px) {
+    .invest-card{
+        max-width: 65%;
+    }
+}
+@media screen and (max-width:515px) {
+    .invest-card{
+        max-width: 90%;
+    }
+}
+@media screen and (max-width:375px) {
+    .invest-card{
+        max-width: 100%;
+    }
+}
