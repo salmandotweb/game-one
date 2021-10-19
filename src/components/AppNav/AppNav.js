@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import "./Navbar.css";
+import "./AppNav.css";
+import "../Navbar/Navbar.css";
+import AppMenu from "../AppMenu/AppMenu";
 
 export default function Navbar({ appNav }) {
   const [show, handleShow] = useState(false);
@@ -19,13 +21,19 @@ export default function Navbar({ appNav }) {
   }, []);
 
   return (
-    <>
+    <div
+      style={{
+        position: "fixed",
+        top: "0",
+        width: "100%",
+      }}
+    >
       <nav
-        className={`navbar fixed-top navbar-expand-lg navbar-light ${
+        className={`navbar app-nav navbar-expand-lg navbar-light ${
           show && "navbar__active"
         }`}
       >
-        <div className="container mobile-nav">
+        <div className="container-fluid mobile-nav">
           <a className="navbar-brand" href="/">
             <img src="images/navlogo.png" alt="logo" />
           </a>
@@ -63,12 +71,16 @@ export default function Navbar({ appNav }) {
                 </a>
               </li>
             </ul>
-            <button className="btn" type="submit">
-              Collect Wallet <i className="fas fa-user"></i>
+            <button className="btn app-nav-btn" type="submit">
+              Login
+            </button>
+            <button className="btn app-nav-btn" type="submit">
+              Register
             </button>
           </div>
         </div>
       </nav>
-    </>
+      <AppMenu />
+    </div>
   );
 }

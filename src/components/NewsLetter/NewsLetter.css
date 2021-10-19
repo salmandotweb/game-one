@@ -12,6 +12,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: 70%;
+  overflow: hidden;
 }
 .newsletter h1 {
   font-size: 1.8rem;
@@ -26,12 +28,15 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  max-width: 60%;
 }
 .subscribe input[type="email"] {
   background: var(--white);
   border: none;
   font-family: inherit;
   padding: 0.6rem 0.2rem;
+  max-width: 60%;
+  border-radius: .2rem;
 }
 .subscribe input[type="email"]:focus {
   outline: none;
@@ -68,6 +73,17 @@
     min-width: 90%;
     flex-direction: column;
   }
+  .subscribe{
+    flex-direction: column;
+    background: none;
+    min-width: 100%;
+  }
+  .subscribe input[type="email"] {
+    font-size: 0.8rem;
+    display: block;
+    min-width: 70%;
+    margin-bottom: 1rem;
+  }
 }
 @media screen and (max-width: 355px) {
   .subscribeBtn {
@@ -75,12 +91,12 @@
     font-weight: 500;
   }
   .newsletter {
-    min-width: 80%;
+    max-width: 80%;
     flex-direction: column;
   }
   .subscribe input[type="email"] {
     font-size: 0.8rem;
-    width: 60%;
+    min-width: 80%;
   }
   .newsletter h1 {
     font-size: 1rem;

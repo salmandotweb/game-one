@@ -1,0 +1,59 @@
+:root {
+  --primary-pink: #ff3573;
+  --dark-purple: #5e35b1;
+  --dark-purple-2: #2a115c;
+  --grey: rgb(184, 184, 184);
+  --white: #fff;
+  --black: #000;
+}
+.app-menu {
+  background: var(--dark-purple-2);
+  color: var(--white);
+  padding: 0.7rem 2rem;
+}
+.app-menu a {
+  color: var(--white);
+}
+.home-link {
+  margin-right: 2rem;
+  font-weight: 500;
+}
+.nav-menu-link {
+  margin: 0 1rem;
+  color: var(--grey) !important;
+}
+.nav-menu-link:hover {
+  margin: 0 1rem;
+  color: var(--white) !important;
+}
+@media screen and (max-width: 972px) {
+  .container-fluid {
+    justify-content: space-between !important;
+  }
+}
+@media screen and (max-width: 792px) {
+  .home-link {
+    display: none;
+  }
+  .navbar-nav {
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 679px) {
+  .app-menu {
+    padding: 0.7rem 0.2rem;
+  }
+}
+@media screen and (max-width: 637px) {
+  .navbar-nav {
+    justify-content: flex-start !important;
+  }
+  .container-fluid {
+    overflow-x: scroll;
+  }
+  .nav-menu-link:last-child {
+    min-width: 8rem;
+  }
+}

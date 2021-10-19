@@ -32,6 +32,10 @@
   width: 80% !important;
   margin: auto;
 }
+.carousel-indicators{
+  margin-bottom: 0;
+  bottom: -20px;
+}
 @media screen and (max-width: 740px) {
   .carousel-control-next-icon i,
   .carousel-control-prev-icon i {

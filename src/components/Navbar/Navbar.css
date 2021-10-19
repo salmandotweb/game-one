@@ -59,6 +59,9 @@
 .navbar-collapse {
   text-align: center;
 }
+.appNav{
+  display: none;
+}
 /* media queries */
 @media screen and (max-width: 992px) {
   .nav-item:not(:last-child) {

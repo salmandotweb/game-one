@@ -12,7 +12,7 @@ export default function InvestSection() {
           background: "url(images/hero-bg.png)",
           backgroundSize: "cover",
           backgroundPosition: "center center",
-          backgroundRepeat: "no-repeat"
+          backgroundRepeat: "no-repeat",
         }}
       >
         <SectionContent
@@ -22,22 +22,16 @@ export default function InvestSection() {
         />
         <div className="invest-section-cards">
           <InvestCard
-            img="images/groups-icon.png"
-            profit="$565"
-            title="Daily Profit"
-            subTitle="We develop the relationships that under the next phase in your."
+            img="images/avatar-1.png"
+            subTitle="Samurai employed a range of weapons such as bows and arrows, spears and guns."
           />
           <InvestCard
-            img="images/groups-icon.png"
-            profit="$2365"
-            title="Weekly Profit"
-            subTitle="We develop the relationships that under the next phase in your."
+            img="images/avatar-3.png"
+            subTitle="Samurai employed a range of weapons such as bows and arrows, spears and guns."
           />
           <InvestCard
-            img="images/groups-icon.png"
-            profit="$5565"
-            title="Monthly Profit"
-            subTitle="We develop the relationships that under the next phase in your."
+            img="images/avatar-2.png"
+            subTitle="Samurai employed a range of weapons such as bows and arrows, spears and guns."
           />
         </div>
       </div>

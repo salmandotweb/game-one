@@ -16,11 +16,11 @@
 }
 @media screen and (max-width: 798px) {
   .header__cards-wrapper {
-    padding: 1rem;
+    padding: 2rem 1rem;
   }
 }
-@media screen and (max-width: 675px){
-  .header__cards-container{
+@media screen and (max-width: 675px) {
+  .header__cards-container {
     flex-direction: column;
   }
 }

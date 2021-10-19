@@ -1,0 +1,16 @@
+:root {
+  --primary-pink: #ff3573;
+  --dark-purple: #5e35b1;
+  --white: #fff;
+  --black: #000;
+}
+.app-nav {
+  background: var(--dark-purple);
+  padding: 0.5rem 1rem;
+}
+.app-nav-btn {
+  border-radius: 0.3rem;
+}
+.app-nav-btn:not(:last-child) {
+  margin: 0 1rem;
+}

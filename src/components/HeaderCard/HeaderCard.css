@@ -55,19 +55,14 @@
     width: 2.5rem;
   }
   .card-title {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
   .card-text {
     font-size: 0.6rem !important;
   }
 }
-@media screen and (max-width: 740px) {
-  .header-card:nth-child(1){
-    display: none;
-  }
-}
-@media screen and (max-width: 675px){
-  .header-card{
+@media screen and (max-width: 675px) {
+  .header-card {
     min-width: 100% !important;
   }
   .card-img {
@@ -81,7 +76,7 @@
     font-size: 0.8rem !important;
     max-width: 60%;
   }
-  .header-card:nth-child(1){
+  .header-card:nth-child(1) {
     display: block;
   }
 }

@@ -13,8 +13,10 @@ export default function Banner() {
           backgroundPosition: "bottom",
         }}
       >
-        <h1>Have any question please feel free!</h1>
-        <button className="btn askBtn">Ask Now</button>
+        <h1 data-aos="fade-left">Have any question please feel free!</h1>
+        <button className="btn askBtn" data-aos="fade-right">
+          Ask Now
+        </button>
       </div>
     </>
   );

@@ -15,13 +15,6 @@
   margin: 0rem 1rem;
   transition: 0.3s all;
 }
-.feature-card:hover {
-  background: rgb(255, 53, 115);
-  color: var(--white);
-}
-.feature-card:hover h5 {
-  color: var(--white);
-}
 .feature-card h5 {
   margin-top: 0.4rem;
   font-weight: 700;
