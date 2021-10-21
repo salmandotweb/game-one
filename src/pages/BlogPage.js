@@ -6,7 +6,9 @@ import "../components/Blog/Blog.css";
 export default function BlogPage() {
   return (
     <div>
-      <AppNav />
+      <div style={{ height: "4rem" }}>
+        <AppNav />
+      </div>
       <Blog />
     </div>
   );

@@ -4,7 +4,7 @@ import "./AppMenu.css";
 
 export default function AppMenu() {
   return (
-    <>
+    <div>
       <nav class="navbar app-menu navbar-expand-lg w-100">
         <div class="container-fluid links-container d-flex align-items-center justify-content-start">
           <Link class="navbar-brand home-link" to="/app">
@@ -36,6 +36,6 @@ export default function AppMenu() {
           </div>
         </div>
       </nav>
-    </>
+    </div>
   );
 }

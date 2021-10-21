@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import "./AppNav.css";
+import "./MarketNav.css";
 import "../Navbar/Navbar.css";
 
 export default function AppNav() {
@@ -22,7 +22,7 @@ export default function AppNav() {
   return (
     <div>
       <nav
-        className={`navbar app-nav navbar-expand-lg navbar-light ${
+        className={`navbar app-nav market-nav navbar-expand-lg navbar-light ${
           show && "navbar__active"
         }`}
       >
@@ -49,26 +49,22 @@ export default function AppNav() {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/dashboard">
+                <Link
+                  className="nav-link active"
+                  aria-current="page"
+                  to="/dashboard"
+                >
+                  Dashboard
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/market">
                   Market Place
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/app">
-                  App
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/blog">
-                  Blog
-                </Link>
-              </li>
             </ul>
-            <button className="btn app-nav-btn" type="submit">
+            <button className="btn ml-10 market-nav-btn" type="submit">
               Login
-            </button>
-            <button className="btn app-nav-btn" type="submit">
-              Register
             </button>
           </div>
         </div>

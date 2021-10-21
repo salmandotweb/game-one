@@ -3,6 +3,7 @@ import AppPage from "./pages/AppPage";
 import { BrowserRouter as Switch, Route } from "react-router-dom";
 import BlogPage from "./pages/BlogPage";
 import MarketPage from "./pages/MarketPage/MarketPage";
+import Dashboard from "./pages/DashboardPage/Dashboard";
 
 function App() {
   return (
@@ -18,6 +19,9 @@ function App() {
       </Route>
       <Route exact path="/blog" component={BlogPage}>
         <BlogPage />
+      </Route>
+      <Route exact path="/dashboard" component={Dashboard}>
+        <Dashboard />
       </Route>
     </Switch>
   );

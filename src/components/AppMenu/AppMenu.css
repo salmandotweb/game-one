@@ -10,7 +10,10 @@
   background: var(--dark-purple-2);
   color: var(--white);
   padding: 0.7rem 2rem;
-  z-index: 10000;
+  z-index: 1000;
+  position: fixed;
+  top: 4.5rem;
+  width: 100%;
 }
 .app-menu a {
   color: var(--white);

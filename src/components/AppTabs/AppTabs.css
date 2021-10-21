@@ -46,7 +46,6 @@ button {
   flex-grow: 1;
 }
 .content {
-  /* background: var(--primary-pink); */
   background: var(--white);
   color: var(--dark-purple);
   padding: 20px;

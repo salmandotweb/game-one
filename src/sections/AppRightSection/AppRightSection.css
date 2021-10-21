@@ -2,8 +2,7 @@
   width: 30%;
   background: #f2f2f2;
   overflow-y: scroll;
-  max-height: 80vh;
-  background: "red";
+  min-height: 100vh;
   padding: 1rem;
 }
 .top-sports {

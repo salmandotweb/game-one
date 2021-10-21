@@ -50,7 +50,7 @@ export default function Navbar({ appNav }) {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/marketplace">
+                <Link className="nav-link" to="/dashboard">
                   MarketPlace
                 </Link>
               </li>

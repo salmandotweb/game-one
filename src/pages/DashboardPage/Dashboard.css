@@ -1,0 +1,13 @@
+:root {
+  --primary-pink: #ff3573;
+  --dark-purple: #5e35b1;
+  --dark-purple-2: #0f002e;
+  --white: #fff;
+  --black: #000;
+}
+
+.dashboard {
+  background: var(--dark-purple-2);
+  min-height: 100vh;
+  width: 100%;
+}

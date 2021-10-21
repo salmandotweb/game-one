@@ -5,22 +5,7 @@
   --black: #000;
 }
 .blog-site {
-  overflow-y: scroll !important;
   overflow-x: hidden;
-  height: 88vh;
-}
-.blog-site::-webkit-scrollbar {
-  width: 0.6rem;
-}
-.blog-site::-webkit-scrollbar-track {
-  background-color: none;
-}
-.blog-site::-webkit-scrollbar-thumb {
-  background: transparent;
-  border-radius: 0rem;
-}
-.blog-site:hover::-webkit-scrollbar-thumb {
-  background: rgb(0, 0, 0, 0.4);
 }
 .blogs-heading {
   font-weight: 700;

@@ -1,11 +1,17 @@
 import React from "react";
-import AppNav from "../../components/AppNav/AppNav";
+import MarketNav from "../../components/MarketNav/MarketNav";
 import "./MarketPage.css";
 
 export default function MarketPage() {
   return (
     <div>
-      <AppNav />
+      <div
+        style={{
+          height: "5rem",
+        }}
+      >
+        <MarketNav />
+      </div>
     </div>
   );
 }

@@ -6,10 +6,8 @@
 }
 .app-left-container {
   background: #f2f2f2;
-  max-height: 80vh;
   max-width: 70%;
   padding: 0.6rem 0;
-  overflow-y: scroll;
 }
 .previews {
   display: flex;
