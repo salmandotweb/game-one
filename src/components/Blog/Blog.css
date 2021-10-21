@@ -1,0 +1,99 @@
+:root {
+  --primary-pink: #ff3573;
+  --dark-purple: #5e35b1;
+  --white: #fff;
+  --black: #000;
+}
+.blog-site {
+  overflow-y: scroll !important;
+  overflow-x: hidden;
+  height: 88vh;
+}
+.blog-site::-webkit-scrollbar {
+  width: 0.6rem;
+}
+.blog-site::-webkit-scrollbar-track {
+  background-color: none;
+}
+.blog-site::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 0rem;
+}
+.blog-site:hover::-webkit-scrollbar-thumb {
+  background: rgb(0, 0, 0, 0.4);
+}
+.blogs-heading {
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  margin: 2rem 0;
+}
+.blog-card {
+  background: var(--white);
+  color: var(--black);
+  border: none !important;
+  box-shadow: none !important;
+  padding: 2rem;
+  transition: 0.3s all;
+  text-align: left;
+}
+.blog-card img {
+  height: 12rem;
+  object-fit: cover;
+}
+.blog-card strong {
+  color: var(--primary-pink);
+}
+.blog-card h5 {
+  margin: 1rem 0;
+  font-size: 1.3rem;
+}
+.blog-card p {
+  font-size: 0.9em;
+  font-weight: 400;
+  -webkit-line-clamp: 1;
+}
+.container {
+  max-width: 1380px !important;
+}
+.linkBtn {
+  background: var(--primary-pink);
+  border: none;
+  border-radius: 0.2rem;
+  color: var(--white);
+  transition: 0.2s all;
+}
+.linkBtn:hover {
+  background: var(--dark-purple);
+  border: none;
+  color: var(--white);
+}
+.blogs-banner .askBtn {
+  display: none;
+}
+.blogs-banner h1 {
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 690px) {
+  .blog-card-body {
+    text-align: left;
+    align-items: flex-start;
+  }
+  .blog-card-body p {
+    max-width: 90%;
+  }
+  .blog-site::-webkit-scrollbar {
+    display: none;
+  }
+}
+@media screen and (max-width: 366px) {
+  .blog-card-body h5 {
+    font-size: 1rem;
+  }
+  .blog-card-body p {
+    max-width: 100%;
+  }
+}

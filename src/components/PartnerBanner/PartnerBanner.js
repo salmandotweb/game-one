@@ -14,19 +14,19 @@ export default function PartnerBanner() {
     >
       <h1 data-aos="fade-left">Our Partners</h1>
       <div className="logos">
-        <div className="partner-logo" data-aos="zoom-in">
+        <div className="partner-logo">
           <img src="images/partner-1.png" alt="logo" />
         </div>
-        <div className="partner-logo" data-aos="zoom-in">
+        <div className="partner-logo">
           <img src="images/partner-2.png" alt="logo" />
         </div>
-        <div className="partner-logo" data-aos="zoom-in">
+        <div className="partner-logo">
           <img src="images/partner-3.png" alt="logo" />
         </div>
-        <div className="partner-logo" data-aos="zoom-in">
+        <div className="partner-logo">
           <img src="images/partner-4.png" alt="logo" />
         </div>
-        <div className="partner-logo" data-aos="zoom-in">
+        <div className="partner-logo">
           <img src="images/partner-5.png" alt="logo" />
         </div>
       </div>

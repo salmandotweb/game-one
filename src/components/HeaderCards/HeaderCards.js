@@ -5,7 +5,7 @@ import "./HeaderCards.css";
 export default function HeaderCards() {
   return (
     <div className="header__cards-wrapper">
-      <div className="header__cards-container" data-aos="fade-up">
+      <div className="header__cards-container">
         <HeaderCard
           img="images/create-icon.png"
           title="Create a Bet"

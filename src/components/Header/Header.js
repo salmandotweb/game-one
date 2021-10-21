@@ -15,9 +15,7 @@ export default function Header() {
         }}
       >
         <div className="header__content">
-          <h1 className="h1-red" data-aos="fade-down">
-            World's 1st
-          </h1>
+          <h1 className="h1-red">World's 1st</h1>
           <h1 data-aos="fade-down">Decentralized Social Betting App</h1>
           <p data-aos="fade-down">
             Where players play against players not computers!

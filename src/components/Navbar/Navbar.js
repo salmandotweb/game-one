@@ -21,14 +21,14 @@ export default function Navbar({ appNav }) {
   return (
     <>
       <nav
-        className={`navbar fixed-top navbar-expand-lg navbar-light ${
+        className={`navbar fixed-top navbar-expand-lg ${
           show && "navbar__active"
         }`}
       >
         <div className="container mobile-nav">
-          <a className="navbar-brand" href="/">
+          <Link className="navbar-brand" to="/">
             <img src="images/navlogo.png" alt="logo" />
-          </a>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -38,7 +38,9 @@ export default function Navbar({ appNav }) {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon">
+              <img src="images/toggler.svg" alt="toggler" />
+            </span>
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav m-auto mb-2 mb-lg-0">
@@ -48,9 +50,9 @@ export default function Navbar({ appNav }) {
                 </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/">
-                  Events
-                </a>
+                <Link className="nav-link" to="/marketplace">
+                  MarketPlace
+                </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/app">
@@ -58,9 +60,9 @@ export default function Navbar({ appNav }) {
                 </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/">
+                <Link className="nav-link" to="/blog">
                   Blog
-                </a>
+                </Link>
               </li>
             </ul>
             <button className="btn" type="submit">

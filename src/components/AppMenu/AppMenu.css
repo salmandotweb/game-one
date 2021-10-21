@@ -10,6 +10,7 @@
   background: var(--dark-purple-2);
   color: var(--white);
   padding: 0.7rem 2rem;
+  z-index: 10000;
 }
 .app-menu a {
   color: var(--white);
@@ -27,7 +28,7 @@
   color: var(--white) !important;
 }
 @media screen and (max-width: 972px) {
-  .container-fluid {
+  .links-container {
     justify-content: space-between !important;
   }
 }
@@ -35,7 +36,7 @@
   .home-link {
     display: none;
   }
-  .navbar-nav {
+  .navbar-navigation {
     align-items: center !important;
     justify-content: center !important;
     width: 100% !important;
@@ -47,11 +48,18 @@
   }
 }
 @media screen and (max-width: 637px) {
-  .navbar-nav {
+  .navbar-navigation {
     justify-content: flex-start !important;
   }
-  .container-fluid {
+  .links-container {
     overflow-x: scroll;
+  }
+  .links-container::-webkit-scrollbar {
+    display: none;
+  }
+  .links-container {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
   .nav-menu-link:last-child {
     min-width: 8rem;

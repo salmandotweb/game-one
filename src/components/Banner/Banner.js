@@ -1,11 +1,11 @@
 import React from "react";
 import "./Banner.css";
 
-export default function Banner() {
+export default function Banner({ title, btn, classN }) {
   return (
     <>
       <div
-        className="banner"
+        className={`banner ${classN}`}
         style={{
           backgroundImage: "url(images/hero-bg.png)",
           backgroundSize: "cover",
@@ -13,10 +13,8 @@ export default function Banner() {
           backgroundPosition: "bottom",
         }}
       >
-        <h1 data-aos="fade-left">Have any question please feel free!</h1>
-        <button className="btn askBtn" data-aos="fade-right">
-          Ask Now
-        </button>
+        <h1>{title}</h1>
+        <button className="btn askBtn">{btn}</button>
       </div>
     </>
   );

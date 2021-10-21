@@ -6,11 +6,11 @@ export default function AppMenu() {
   return (
     <>
       <nav class="navbar app-menu navbar-expand-lg w-100">
-        <div class="container-fluid d-flex align-items-center justify-content-start">
+        <div class="container-fluid links-container d-flex align-items-center justify-content-start">
           <Link class="navbar-brand home-link" to="/app">
             <i className="fas fa-home"></i> Home
           </Link>
-          <div class="navbar-nav d-flex align-items-center justify-content-center flex-row">
+          <div class="navbar-nav navbar-navigation d-flex align-items-center justify-content-center flex-row">
             <a
               class="nav-link nav-menu-link active"
               aria-current="page"

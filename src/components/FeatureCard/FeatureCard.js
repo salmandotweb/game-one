@@ -3,7 +3,7 @@ import "./FeatureCard.css";
 
 export default function FeatureCard({ img, title, subtitle }) {
   return (
-    <div class="card feature-card" data-aos="fade-up">
+    <div class="card feature-card">
       <img src={img} class="card-img" alt="img" />
       <div class="card-body">
         <h5 class="card-title">{title}</h5>

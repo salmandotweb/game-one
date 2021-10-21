@@ -2,9 +2,8 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./AppNav.css";
 import "../Navbar/Navbar.css";
-import AppMenu from "../AppMenu/AppMenu";
 
-export default function Navbar({ appNav }) {
+export default function AppNav() {
   const [show, handleShow] = useState(false);
   const transitionNavbar = () => {
     if (window.scrollY > 100) {
@@ -21,22 +20,16 @@ export default function Navbar({ appNav }) {
   }, []);
 
   return (
-    <div
-      style={{
-        position: "fixed",
-        top: "0",
-        width: "100%",
-      }}
-    >
+    <div>
       <nav
         className={`navbar app-nav navbar-expand-lg navbar-light ${
           show && "navbar__active"
         }`}
       >
         <div className="container-fluid mobile-nav">
-          <a className="navbar-brand" href="/">
+          <Link className="navbar-brand" to="/">
             <img src="images/navlogo.png" alt="logo" />
-          </a>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -56,9 +49,9 @@ export default function Navbar({ appNav }) {
                 </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/">
-                  Events
-                </a>
+                <Link className="nav-link" to="/marketplace">
+                  Market Place
+                </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/app">
@@ -66,9 +59,9 @@ export default function Navbar({ appNav }) {
                 </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/">
+                <Link className="nav-link" to="/blog">
                   Blog
-                </a>
+                </Link>
               </li>
             </ul>
             <button className="btn app-nav-btn" type="submit">
@@ -80,7 +73,6 @@ export default function Navbar({ appNav }) {
           </div>
         </div>
       </nav>
-      <AppMenu />
     </div>
   );
 }

@@ -1,0 +1,16 @@
+.app-container {
+  max-height: 100vh;
+  overflow: hidden;
+}
+.app-section {
+  display: flex;
+}
+@media screen and (max-width: 800px) {
+  .app-section {
+    flex-direction: column;
+  }
+  .app-container {
+    overflow: visible;
+    min-height: 100vh;
+  }
+}

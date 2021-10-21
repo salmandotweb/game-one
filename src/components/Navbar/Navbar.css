@@ -50,7 +50,7 @@
   height: 3rem;
   width: 3rem;
 }
-.navbar-toggler span {
+.navbar-toggler-icon {
   filter: invert(1);
 }
 .navbar-toggler:focus {
@@ -59,7 +59,7 @@
 .navbar-collapse {
   text-align: center;
 }
-.appNav{
+.appNav {
   display: none;
 }
 /* media queries */

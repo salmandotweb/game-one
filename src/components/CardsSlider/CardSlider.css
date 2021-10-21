@@ -1,0 +1,50 @@
+:root {
+  --primary-pink: #ff3573;
+  --dark-purple: #5e35b1;
+  --white: #fff;
+  --black: #000;
+}
+.slick-prev {
+  z-index: 1000;
+  left: 1%;
+  top: 40%;
+}
+.slick-next {
+  left: 97%;
+  top: 40%;
+  z-index: 1000;
+}
+.slick-next::before,
+.slick-prev::before {
+  color: var(--black) !important;
+  font-size: 1.7rem;
+}
+.slick-track {
+  width: 2000rem !important;
+  padding: 1rem 0rem;
+}
+@media screen and (max-width: 1273px) {
+  .slick-slide {
+    width: fit-content !important;
+  }
+}
+@media screen and (max-width: 736px) {
+  .slick-prev {
+    z-index: 1000;
+    left: 3%;
+    top: 40%;
+  }
+  .slick-next {
+    left: 94%;
+    top: 40%;
+    z-index: 1000;
+  }
+}
+@media screen and (max-width: 425px) {
+  .slick-prev {
+    display: none !important;
+  }
+  .slick-next {
+    display: none !important;
+  }
+}
