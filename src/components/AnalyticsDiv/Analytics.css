@@ -2,13 +2,14 @@
   --primary-pink: #ff3573;
   --dark-purple: #5e35b1;
   --dark-purple-2: #30126d;
+  --dark-purple-3: #0f002e;
   --white: #fff;
   --black: #000;
 }
 .analytics-container {
   max-width: 80%;
   overflow: hidden;
-  margin: 3rem auto;
+  margin: 2rem auto;
   border-radius: 0.5rem;
   border: 0.1rem solid var(--dark-purple);
 }
@@ -18,7 +19,7 @@
 .market-tabs {
   width: auto;
   border-right: 0 !important;
-  background: var(--dark-purple-2) !important;
+  background: var(--dark-purple-3) !important;
   padding: 1rem 2rem;
 }
 .active-market-tabs {
@@ -30,7 +31,7 @@
   padding: 1rem 2rem;
 }
 .market-content {
-  background: var(--dark-purple-2);
+  background: var(--dark-purple-3);
   color: var(--white);
   padding: 2rem 1rem;
   display: flex;

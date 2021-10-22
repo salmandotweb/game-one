@@ -1,13 +1,30 @@
 :root {
   --primary-pink: #ff3573;
   --dark-purple: #5e35b1;
-  --dark-purple-2: #0f002e;
+  --dark-purple-3: #0f002e;
   --white: #fff;
   --black: #000;
 }
-
 .dashboard {
-  background: var(--dark-purple-2);
+  background: var(--dark-purple-3);
   min-height: 100vh;
   width: 100%;
+  padding-bottom: 2rem;
+}
+.listed-sections {
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (max-width: 890px) {
+  .listed-sections {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 380px) {
+  .listed-sections {
+    max-width: 95%;
+  }
 }
